@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Conejo
+  - Dog
+  - Jirafa
+  - Oso
+  - Oveja
+  - Rana
+  - Tigre
+  - Vaca
+  - Animals
   layers:
   - Default
   - TransparentFX
