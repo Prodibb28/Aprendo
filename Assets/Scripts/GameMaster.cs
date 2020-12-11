@@ -7,9 +7,8 @@ using UnityEngine.SceneManagement;
 public class GameMaster : MonoBehaviour
 {
 
-    public GameObject Game, FirstPant,Win,Lose;
-    public Text UIText, textName;
-    public InputField InputName;
+    public GameObject Game,Win,Lose;
+    public Text UIText;
     public GameObject[] animals;
     public GameObject[] animalsBlack;
     public GameObject GroupAnimals,GroupAnimalsBlack,TryAgainT;
@@ -31,11 +30,9 @@ public class GameMaster : MonoBehaviour
       if(CheckNameI==1){
 
          Game.SetActive(true);
-         FirstPant.SetActive(false);
       }
       else{
          Game.SetActive(false);
-         FirstPant.SetActive(true);
       }
        instantiateAnimals();
        trigg= Collider1.GetComponent<Trigg>();
@@ -45,7 +42,6 @@ public class GameMaster : MonoBehaviour
 
        Win.SetActive(false);
        Lose.SetActive(false);
-     textName.text =  PlayerPrefs.GetString("Name");
      TryAgainT.SetActive(false);
        
     }
@@ -98,13 +94,7 @@ public class GameMaster : MonoBehaviour
      
             
    }
-
-   public void SaveName(){
-       if(!string.IsNullOrEmpty(InputName.text ))
-     PlayerPrefs.SetString("Name", InputName.text);
-     PlayerPrefs.SetInt("CheckName",1);
-      textName.text =  PlayerPrefs.GetString("Name");
-   }
+  
     IEnumerator Wait(){
        yield return new WaitForSeconds(4);
        TryAgainT.SetActive(false);
