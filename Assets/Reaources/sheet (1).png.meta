@@ -82,16 +82,13 @@ TextureImporter:
     second: sheet (1)_25
   - first:
       213: 3031009000560969980
-    second: GameShadows
+    second: sheet (1)_26
   - first:
       213: 1391348586207292306
     second: sheet (1)_27
   - first:
       213: -1490967153624465212
     second: sheet (1)_28
-  - first:
-      213: 7687150549812359902
-    second: GameShadows
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -735,22 +732,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GameShadows
+      name: sheet (1)_26
       rect:
         serializedVersion: 2
-        x: 63
-        y: 802
-        width: 538
-        height: 396
+        x: 95
+        y: 790
+        width: 460
+        height: 387
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed2b38062be3eaa60800000000000000
-      internalID: 7687150549812359902
+      spriteID: cf8c27580ae401a20800000000000000
+      internalID: 3031009000560969980
       vertices: []
       indices: 
       edges: []
