@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public static class ButtonExtension
 {
@@ -52,7 +53,13 @@ public class BtnCreator : MonoBehaviour
         {
             case 0:
                 Debug.Log("item" + itenIdenx);
+                SceneManager.LoadScene(2);
                 break;
+            case 1:
+                Debug.Log("item" + itenIdenx);
+                SceneManager.LoadScene(3);
+                break;
+
         }
 
         

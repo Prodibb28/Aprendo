@@ -10,7 +10,6 @@ public class Gestor : MonoBehaviour
     public GameObject Panel,Win,Lose,Astro;
     public GameObject Game;
     public InputField InputName;
-    public Text  textName;
 
    
     List <int> numerosGuardados = new List<int> ();
@@ -18,7 +17,6 @@ public class Gestor : MonoBehaviour
 
     void Start()
     { 
-      textName.text =  PlayerPrefs.GetString("NameP");
       Astro = GameObject.FindWithTag("Astronauta");
       CheckNameI=PlayerPrefs.GetInt("CheckNameP");   
       if(CheckNameI==1){
@@ -58,7 +56,6 @@ public class Gestor : MonoBehaviour
        if(!string.IsNullOrEmpty(InputName.text )){
        PlayerPrefs.SetString("NameP", InputName.text);
        PlayerPrefs.SetInt("CheckNameP",1);
-       textName.text =  PlayerPrefs.GetString("NameP");
    }
 }
 
