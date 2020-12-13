@@ -13,6 +13,7 @@ TagManager:
   - Tigre
   - Vaca
   - Animals
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -49,4 +50,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Win
+    uniqueID: 2764371555
+    locked: 0
+  - name: Piezas
+    uniqueID: 2836711837
     locked: 0

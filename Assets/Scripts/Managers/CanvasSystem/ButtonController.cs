@@ -4,6 +4,9 @@ using UnityEngine.UI;
 public enum ButtonType
 {
     START_GAME,
+    PERFIL,
+    INFO,
+    CONFIG,
     END_GAME
 }
 
@@ -29,6 +32,18 @@ public class ButtonController : MonoBehaviour
             case ButtonType.START_GAME:
                 //Call other code that is necessary to start the game like levelManager.StartGame()
                 canvasManager.SwitchCanvas(CanvasType.StartMenu);
+                break;
+            case ButtonType.PERFIL:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.Perfil);
+                break;
+            case ButtonType.INFO:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.info);
+                break;
+            case ButtonType.CONFIG:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.Config);
                 break;
             case ButtonType.END_GAME:
                 //Do More Things like SaveSystem.Save()

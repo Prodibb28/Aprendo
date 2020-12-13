@@ -7,6 +7,9 @@ public enum CanvasType
 {
     StartMenu,
     GetName,
+    Perfil,
+    info,
+    Config,
     FirstPant,
     GamesMenu,
     EndScreen

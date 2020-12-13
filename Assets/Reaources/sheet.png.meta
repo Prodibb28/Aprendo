@@ -23,6 +23,9 @@ TextureImporter:
   - first:
       213: 4530623484691778272
     second: Rompecabezas
+  - first:
+      213: -5581956015464806101
+    second: Rompecabeza
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -170,7 +173,7 @@ TextureImporter:
         width: 430
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +194,7 @@ TextureImporter:
         width: 430
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +215,7 @@ TextureImporter:
         width: 430
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,7 +236,7 @@ TextureImporter:
         width: 430
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,7 +257,7 @@ TextureImporter:
         width: 430
         height: 407
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,6 +265,27 @@ TextureImporter:
       bones: []
       spriteID: 0ea88181e0200ee30800000000000000
       internalID: 4530623484691778272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rompecabeza
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 4511
+        width: 1988
+        height: 1160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b298d521498e882b0800000000000000
+      internalID: -5581956015464806101
       vertices: []
       indices: 
       edges: []
