@@ -1245,7 +1245,6 @@ GameObject:
   m_Component:
   - component: {fileID: 836265411}
   - component: {fileID: 836265410}
-  - component: {fileID: 836265412}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -1295,6 +1294,7 @@ MonoBehaviour:
   Collider2: {fileID: 2083193689}
   Collider3: {fileID: 884758929}
   Collider4: {fileID: 1060887867}
+  time: 120
   numerosGuardados: 
 --- !u!4 &836265411
 Transform:
@@ -1310,18 +1310,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &836265412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836265409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a1d8fc98c4272d49b65fa6fbec946c9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &884758929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,7 +2538,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 836265412}
+      - m_Target: {fileID: 836265410}
         m_MethodName: TryAgain
         m_Mode: 1
         m_Arguments:

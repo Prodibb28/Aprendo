@@ -12,6 +12,8 @@ public class GameControl : MonoBehaviour
     [SerializeField]
     private GameObject Win;
 
+    public GameObject Wait;
+
     public static bool youWin;
 
     // Start is called before the first frame update
@@ -19,6 +21,7 @@ public class GameControl : MonoBehaviour
     {
         Win.SetActive(false);
         youWin = false;
+        Wait.SetActive(false);
     }
 
     // Update is called once per frame
@@ -31,8 +34,22 @@ public class GameControl : MonoBehaviour
             picture[4].rotation.z == 0 &&
             picture[5].rotation.z == 0)
         {
-            youWin = true;
-            Win.SetActive(true);
+            youWin = true;            
         }
+    }
+
+    public void CheckConfirm()
+    {
+        if (youWin == true)
+        {
+            Win.SetActive(true);
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Play);
+        }
+        else
+        {
+            Wait.SetActive(true);
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Error);
+        }
+        
     }
 }

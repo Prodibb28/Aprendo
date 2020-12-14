@@ -47,6 +47,7 @@ public class Check : MonoBehaviour
             PlayerPrefs.SetInt("valor", firstTime);
             panelFristTime.SetActive(false);
             panelGame.SetActive(true);
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Confirm);
         }       
               
     }

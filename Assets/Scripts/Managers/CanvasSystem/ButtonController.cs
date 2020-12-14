@@ -7,6 +7,10 @@ public enum ButtonType
     PERFIL,
     INFO,
     CONFIG,
+    PNIÑO,
+    PSELECTOR,
+    PNIÑA,
+    MENUOPC,
     END_GAME
 }
 
@@ -44,6 +48,21 @@ public class ButtonController : MonoBehaviour
             case ButtonType.CONFIG:
                 //Do More Things like SaveSystem.Save()
                 canvasManager.SwitchCanvas(CanvasType.Config);
+                break;
+            case ButtonType.PNIÑO:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.PanelNiño);
+                SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Play);
+                break;
+            case ButtonType.PNIÑA:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.PanelNiña);
+                SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Play);
+                break;
+            case ButtonType.PSELECTOR:
+                //Do More Things like SaveSystem.Save()
+                canvasManager.SwitchCanvas(CanvasType.Pselector);
+                SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Play);
                 break;
             case ButtonType.END_GAME:
                 //Do More Things like SaveSystem.Save()

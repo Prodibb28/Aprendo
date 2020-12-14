@@ -31,6 +31,7 @@ public class ButotonSelector : MonoBehaviour
         if (index < 0)
             index = contenedor.Length - 1;
         contenedor[index].SetActive(true);
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Arrows);
     }
     public void BtnRight()
     {
@@ -39,6 +40,7 @@ public class ButotonSelector : MonoBehaviour
         if (index == contenedor.Length)
             index = 0;
         contenedor[index].SetActive(true);
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Arrows);
     }
 
     // Update is called once per frame

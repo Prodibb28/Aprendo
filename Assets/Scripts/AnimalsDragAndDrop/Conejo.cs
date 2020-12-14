@@ -33,8 +33,10 @@ public class Conejo : MonoBehaviour
        if (Distance<70){
            gameObject.transform.position = AnimalBlack.transform.position;
             contAnimal=1;
-           
-       }    
+
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+
+        }    
        else{
            gameObject.transform.position = AnimalInitialPos;
             contAnimal=0;

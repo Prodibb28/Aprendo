@@ -20,6 +20,7 @@ public class Tigre : MonoBehaviour
       if(cont!=1){
          AnimalInitialPos = gameObject.transform.position; 
          cont=1;
+            
         }
           Drag();
    }
@@ -28,8 +29,8 @@ public class Tigre : MonoBehaviour
        float Distance= Vector3.Distance(gameObject.transform.position, AnimalBlack.transform.position);
        if (Distance<70){
            gameObject.transform.position = AnimalBlack.transform.position;
-           
-       }    
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }    
        else{
            gameObject.transform.position = AnimalInitialPos;
        }

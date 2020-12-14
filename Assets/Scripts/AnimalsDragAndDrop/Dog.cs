@@ -30,7 +30,8 @@ public class Dog : MonoBehaviour
        if (Distance<70){
            gameObject.transform.position = DogBlack.transform.position;
            contAnimal =1;
-       }    
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }    
        else{
            gameObject.transform.position = OsoInitialPos;
            contAnimal =0;

@@ -85,7 +85,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            Hair.transform.position = HairB.transform.position;
            cont=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            Hair.transform.position = HairInitialPos; 
            cont=0;    
@@ -97,7 +98,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            Nose.transform.position = NoseB.transform.position;
             cont1=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            Nose.transform.position = NoseInitialPos; 
             cont1=0;   
@@ -109,7 +111,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            CejaLeft.transform.position = CejaLeftB.transform.position;
             cont2=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            CejaLeft.transform.position = CejaLeftInitialPos;      
            cont2=0;
@@ -121,7 +124,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            CejaRight.transform.position = CejaRightB.transform.position;
             cont3=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            CejaRight.transform.position =CejaRightInitialPos;      
            cont3=0;
@@ -133,7 +137,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            EyeLeft.transform.position = EyeLeftB.transform.position;
             cont4=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            EyeLeft.transform.position =EyeLeftInitialPos; 
            cont4=0;     
@@ -145,7 +150,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            EyeRigh.transform.position = EyeRighB.transform.position;
             cont5=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            EyeRigh.transform.position =EyeRightInitialPos; 
            cont5=0;     
@@ -158,7 +164,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            Mouth.transform.position = MouthB.transform.position;
            cont6=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
            Mouth.transform.position =MouthInitialPos; 
            cont6=0;
@@ -171,7 +178,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            OrejaR.transform.position = OrejaRB.transform.position;
             cont7=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
           OrejaR.transform.position =OrejaRInitialPos;    
           cont7=0;
@@ -184,7 +192,8 @@ public class Manager : MonoBehaviour
        if (Distance<70){
            OrejaI.transform.position = OrejaIB.transform.position;
             cont8=1;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
         else{
           OrejaI.transform.position =OrejaIInitialPos;  
           cont8=0;         
@@ -197,13 +206,15 @@ public void BttnCheck(){
 
        Win.SetActive(true);
        Lose.SetActive(false);
-    
-  }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Confirm);
+
+        }
   else{
     Win.SetActive(false);
     Lose.SetActive(true);
      StartCoroutine("Wait");
-   }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Error);
+        }
 
   }
 

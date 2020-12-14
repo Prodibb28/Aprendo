@@ -8,5 +8,6 @@ public class TouchController : MonoBehaviour
     {
         if (!GameControl.youWin)
             transform.Rotate(0f, 0f, 90f);
+        SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Touch);
     }
 }

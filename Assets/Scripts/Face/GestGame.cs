@@ -5,6 +5,7 @@ using UnityEngine;
 public class GestGame : MonoBehaviour
 {
     public GameObject GameBoy, GameGirl,PanelStart;
+
     void Start()
     {
         PanelStart.SetActive(true);

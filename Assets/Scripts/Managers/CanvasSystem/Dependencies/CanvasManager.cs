@@ -12,6 +12,9 @@ public enum CanvasType
     Config,
     FirstPant,
     GamesMenu,
+    PanelNiño,
+    PanelNiña,
+    Pselector,
     EndScreen
 }
 

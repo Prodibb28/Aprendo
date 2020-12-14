@@ -20,14 +20,16 @@ public class Oso : MonoBehaviour
          if(cont!=1){
          OsoInitialPos = gameObject.transform.position; 
          cont=1;
-      }
+            
+        }
           Drag();
    }
    public void DropAnimal(){
        float Distance= Vector3.Distance(gameObject.transform.position, OsoBlack.transform.position);
        if (Distance<70){
            gameObject.transform.position = OsoBlack.transform.position;
-       }
+            SfxManager.sfxInstance.Audio.PlayOneShot(SfxManager.sfxInstance.Drag);
+        }
        else{
            gameObject.transform.position = OsoInitialPos;          
        }
